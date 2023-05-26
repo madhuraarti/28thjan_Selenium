@@ -1,0 +1,26 @@
+package HandlingOfMultipleElements;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class example2_selectMutipleCheckboxes 
+{
+  public static void main(String[] args) 
+  {
+	WebDriver driver = new ChromeDriver();
+	driver.get("file:///C:/Users/DELL/Desktop/God%20please%20give%20me%2080000-%20per%20month/Automation%20notes/handling.html");
+   
+	List<WebElement>allCheckboxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
+	
+	for (WebElement s1:allCheckboxes)
+	{
+		s1.click();
+	}
+  
+  }
+    
+}
