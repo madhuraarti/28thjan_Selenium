@@ -48,7 +48,7 @@ public class example3_1switchToChildWindow
 		
 		// step 5:
 		
-		driver.findElement(By.xpath("//input[@name='NewWindow']")).click();;
+		driver.findElement(By.xpath("//input[@name='NewWindow']")).click();
 		
 	  }
 }
